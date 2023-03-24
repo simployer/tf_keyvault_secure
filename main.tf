@@ -23,7 +23,7 @@ resource "azurerm_key_vault" "kv" {
 }
 
 module "common" {
-  source      = "git@github.com:simployer/terraform-modules-common.git"
+  source      = "github.com/simployer/terraform-modules-common.git"
   project     = var.PROJECT
   environment = var.ENVIRONMENT
 }
