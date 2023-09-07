@@ -10,7 +10,7 @@ resource "azurerm_key_vault" "kv" {
     object_id = data.azurerm_client_config.current.object_id
     tenant_id = data.azurerm_client_config.current.tenant_id
     secret_permissions = [
-      "Get", "List", "Set", "Delete"
+      "Get", "List", "Set", "Delete", "Purge"
     ]
   }
   network_acls {
